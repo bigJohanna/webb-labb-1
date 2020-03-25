@@ -1,0 +1,22 @@
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-content: center;
+}
+
+.masthead{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.flexboxcontainer{
+    display: flex;
+    flex-direction: column;
+}
