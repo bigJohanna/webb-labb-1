@@ -17,6 +17,11 @@
     width: 45%;
 }
 
+.JB{
+    font-family: Georgia, serif;
+    padding: 1vw;
+}
+
 .flexboxcontainer{
     display: flex;
     flex-direction: column;
@@ -26,15 +31,16 @@
 }
 
 #ulmenu a:hover {
-    background-color: #111111;
+    background-color: #0B1C0D;
 }
 
 #ulmenu a {
     display: block;
-    color: white;
+    color: #F5FAFA;
     text-align: center;
-    padding: 16px;
+    padding: 2vw;
     text-decoration: none;
+    font-family: Georgia, serif;
 }
 
 .menulist {
@@ -46,7 +52,9 @@
     margin: 10px;
     padding: 0px;
     overflow: hidden;
-    background-color: #333333;
+    background-color: #184040;
+
+
 }
 
 .div1 {
