@@ -9,21 +9,67 @@
     <header class="masthead">
         <div>
             <a href="index.html">
-                <img class="logo"  src="img/loggaJB.jpg" >
+                <img class="logo" src="img/loggaJB.jpg">
             </a>
         </div>
 
     </header>
     <div class="flexboxcontainer">
         <div>
-            <ul>
-                <li><a href="index.html" onclick="myFunction()">Alla b&oumlcker</a></li>
-                <li><a href="#topplista" onclick="myFunction()">Topplista</a></li>
-                <li><a href="#diskussionsforum" onclick="myFunction()">Diskussionsforum</a></li>
-                <li><a href="#dela" onclick="myFunction()">V&aumlrva en v&aumln</a></li>
-                <li><a href="boktips.html">Tipsa om en bok </a></li>
+            <ul id="ulmenu" class="ulmenulist">
+                <li class="menulist"><a href="index.html">Alla b&oumlcker</a></li>
+                <li class="menulist"><a href="#topplista" onclick="myFunction()">Topplista</a></li>
+                <li class="menulist"><a href="#diskussionsforum" onclick="myFunction()">Diskussionsforum</a></li>
+                <li class="menulist"><a href="#dela" onclick="myFunction()">V&aumlrva en v&aumln</a></li>
+                <li class="menulist"><a href="boktips.html">Tipsa om en bok </a></li>
             </ul>
         </div>
+    </div>
+    <p id="intro">
+        Klicka p&aring b&oumlckerna f&oumlr att l&aumlsa recension och diskutera boken!
+    </p>
+    <div class="flexcontent">
+        <ul id="book-list">
+            <li>
+                <div class="div1">
+                    <a href="twocaravans.html">
+                        <img src="img/twocaravans.jpeg" alt="Bokomslag Two Caravans" class="bookCover"/>
+                    </a>
+                    <div class="content">
+                        <h4>Marina Lewycka "Two Caravans"</h4>
+                        <p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och
+                            l&aumlsupplevelse</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="div1">
+                    <a href="karlekensantarktis.html">
+                        <img src="img/karlekensantarktis.jpeg" alt="Bokomslag K&oumlrlekens antarktis"
+                             class="bookCover"/>
+                    </a>
+                    <div class="content">
+                        <h4>Sara Stridsberg "K&oumlrlekens antarktis"</h4>
+                        <p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och
+                            l&aumlsupplevelse</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="div1">
+                    <a href="viforuppmedmor.html">
+                        <img src="img/viforuppmedmor.jpg" alt="Bokomslag Vi for upp med mor" class="bookCover"/>
+                    </a>
+                    <div class="content">
+                        <h4>Karin Smirnoff "Vi for upp med mor"</h4>
+                        <p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och
+                            l&aumlsupplevelse</p>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
     </div>
 </div>
 </body>
@@ -34,7 +80,6 @@
 
 </footer>
 </html>
-
 
 
 <script>
