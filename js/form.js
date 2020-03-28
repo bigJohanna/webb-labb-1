@@ -5,15 +5,16 @@ const elOutput = document.getElementById('output');
 
 function skickaTips(event){
     // Använd value när man hämtar från input i formuläret
-    let titel = elBoktipstitel.value;
-    let boktipsBeskrivning = elBoktipsBeskrivning.value;
+    const titel = elBoktipstitel.value;
+    const boktipsBeskrivning = elBoktipsBeskrivning.value;
 
     console.log("Textfält i funktion " + titel + boktipsBeskrivning);
 
-    elOutput.textContent = 'Hej ' + elBoktipstitel.value;
+    elOutput.textContent = "Tack för tipset!";
 
     // Submittar inte formuläret
     event.preventDefault(); //
 }
 
-elForm.addEventListener('submit', skickaTips, false);
+elForm.addEventListener('submit', skickaTips);
+

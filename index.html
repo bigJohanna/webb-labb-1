@@ -3,76 +3,53 @@
     <title>Johannas Bokklubb</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-<div class="gridcontainer">
-    <header class="masthead">
-        <div>
-            <a href="index.html">
-                <img class="logo" src="img/johannasklubb.jpg">
-            </a>
-        </div>
-        <div class="JB">
-            <h1 class="JB">Johannas Bokklubb</h1>
-        </div>
-    </header>
-    <div class="flexboxcontainer">
-        <div>
-            <ul id="ulmenu" class="ulmenulist">
-                <li class="menulist"><a href="index.html">Alla b&oumlcker</a></li>
-                <li class="menulist"><a href="#topplista" onclick="myFunction()">Topplista</a></li>
-                <li class="menulist"><a href="#sokpasidan" onclick="myFunction()">Sök på sidan</a></li>
-                <li class="menulist"><a href="#dela" onclick="myFunction()">V&aumlrva en v&aumln</a></li>
-                <li class="menulist"><a href="boktips.html">Tipsa om en bok </a></li>
-            </ul>
-        </div>
-    </div>
+<div id="header">
+
+</div>
+<script>
+    $("#header").load("templates/header.html");
+</script>
+<div class="gridcontainer2">
     <p id="intro">
         Klicka p&aring b&oumlckerna f&oumlr att l&aumlsa recension och diskutera boken!
     </p>
     <div class="flexcontent">
         <ul id="book-list">
-            <div class="div1">
-                <li>
-                    <a href="twocaravans.html">
-                        <img src="img/twocaravans.jpeg" alt="Bokomslag Two Caravans" class="bookCover"/>
-                    </a>
-                    <div class="content">
-                        <h4>Marina Lewycka "Two Caravans"</h4>
-                        <p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och
-                            l&aumlsupplevelse</p>
-                    </div>
-                </li>
-            </div>
-            <li>
-                <div class="div1">
-                    <a href="karlekensantarktis.html">
-                        <img src="img/karlekensantarktis.jpeg" alt="Bokomslag K&aumlrlekens antarktis"
-                             class="bookCover"/>
-                    </a>
-                    <div class="content">
-                        <h4>Sara Stridsberg "K&aumlrlekens antarktis"</h4>
-                        <p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och
-                            l&aumlsupplevelse</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="div1">
-                    <a href="viforuppmedmor.html">
-                        <img src="img/viforuppmedmor.jpg" alt="Bokomslag Vi for upp med mor" class="bookCover"/>
-                    </a>
-                    <div class="content">
-                        <h4>Karin Smirnoff "Vi for upp med mor"</h4>
-                        <p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och
-                            l&aumlsupplevelse</p>
-                    </div>
-                </div>
-            </li>
+
 
         </ul>
+        <script>
 
+            function loadBooks() {
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'json',
+                    url: 'data/books.json',
+                    success: function (data) {
+                        let books = "";
+                        data.books.forEach(function (book, index) {
+
+                            books += '<div class="div1">'
+                            books += '<li>'
+                            books += '<img src="' + book.Bookcover + '" alt="' + book.Bookcover + '" class="bookCover"/>'
+                            books += '</a>'
+                            books += '<div class="content">'
+                            books += '<h4>' + book.Author + ' \"' + book.Title + '\"</h4>'
+                            books += '<p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och l&aumlsupplevelse</p>'
+                            books += '</div>'
+                            books += '</li>'
+                            books += '</div>'
+                        });
+                        document.getElementById("book-list").innerHTML = books;
+                    }
+                });
+            }
+            loadBooks()
+        </script>
     </div>
 </div>
 </body>
@@ -85,8 +62,7 @@
 </html>
 
 
-<script>
-    function myFunction() {
-        alert("Not yet available.");
-    }
-</script>
+<!--
+
+
+-->
