@@ -18,9 +18,8 @@
         Klicka p&aring b&oumlckerna f&oumlr att l&aumlsa recension och diskutera boken!
     </p>
     <div class="flexcontent">
+
         <ul id="book-list">
-
-
         </ul>
         <script>
 
@@ -33,13 +32,16 @@
                         let books = "";
                         data.books.forEach(function (book, index) {
 
-                            books += '<div class="div1">'
+                            <!-- lägg till anchortag till bokens html-sida -->
+
                             books += '<li>'
+                            books += '<div class="div1">'
+                            books += '<a href="' + book.Link + '">'
                             books += '<img src="' + book.Bookcover + '" alt="' + book.Bookcover + '" class="bookCover"/>'
                             books += '</a>'
                             books += '<div class="content">'
                             books += '<h4>' + book.Author + ' \"' + book.Title + '\"</h4>'
-                            books += '<p>En kort introduktion eller text eller n&aringn kommentar om bokens inneh&aringll och l&aumlsupplevelse</p>'
+                            books += '<p>' + book.Text + '</p>'
                             books += '</div>'
                             books += '</li>'
                             books += '</div>'

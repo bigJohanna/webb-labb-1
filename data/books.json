@@ -3,11 +3,30 @@
 {
 "Title": "Slumpvandring",
 "Author": "Majgull Axelsson",
-"Bookcover": "img/Screen Shot 2020-03-26 at 16.41.28.png"
+"Bookcover": "img/download.jpeg",
+  "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+  "Link": "book-pages/slumpvandring.html"
 },
 {
 "Title": "Vi for upp med mor",
 "Author": "Karin Smirnoff",
-"Bookcover": "img/viforuppmedmor.jpg"}
+"Bookcover": "img/viforuppmedmor.jpg",
+  "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+  "Link": "book-pages/viforuppmedmor.html"
+},
+  {
+    "Title": "Two Caravans",
+    "Author": "Marina Lewycka",
+    "Bookcover": "img/twocaravans.jpeg",
+    "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+    "Link": "book-pages/twocaravans.html"
+  },
+  {
+    "Title": "K&aumlrlekens Antarktis",
+    "Author": "Sara Stridsberg",
+    "Bookcover": "img/karlekensantarktis.jpeg",
+    "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+    "Link": "book-pages/karlekensantarktis.html"
+  }
 ]
 }
