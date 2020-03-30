@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Vi for upp med mor</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="header">
+
+</div>
+
+<script>
+    $("#header").load("templates/header.html");
+</script>
+
+<div id="bookPageInfo">
+
+</div>
+
+<script>
+    function loadBookPageInfo() {
+        $.ajax({
+            type: 'GET',
+            DataType: 'json',
+            url: 'data/books.json',
+            success: function (data) {
+                let books = "";
+                let book = data.books[1] ;
+                    books += '<div class="gridcontainer2">';
+                    books += '<div class="flexcontent">';
+                    books += '<h3>"' + book.Title + '" av ' + book.Author + '</h3>';
+                    books += '<img class="logo" src="' + book.Bookcover + '" alt="' + book.BookCover + '">';
+                    books += '<br/>';
+                    books += '<div id="divLongText"></div><p id="LongText">' + book.LongText + '</p></div>';
+                    books += '</div>';
+                ;
+                document.getElementById("bookPageInfo").innerHTML = books;
+            }
+        });
+    }
+
+    loadBookPageInfo()
+</script>
+</body>
+
+<footer>
+
+    <hr/>
+
+</footer>
+</html>
+
+
+<script>
+    function myFunction() {
+        alert("Not yet available.");
+    }
+</script>

@@ -7,39 +7,45 @@
 </head>
 
 <body>
-        <div id="header">
+<div id="header">
+
+</div>
+
+<script>
+    $('#header').load("templates/header.html");
+</script>
+<div class="gridcontainer2">
+    <p id="intro"> Tipsa mig om en bok! <br/><br/> Fyll i fomul&aumlret nedan.</p>
+    <div id="boktipsformular" align="center">
+        <p id="output" align="center"></p>
+        <div class="gridcontainer">
+            <div id="flexboxcontainer" class="flexboxcontainer">
+            <fieldset>
+                <legend>Tips!</legend>
+            <form id="formReg">
+                <p>
+                    <label>Bokens titel: </label>
+                    <input type="text" id="boktipstitel"/>
+                </p>
+                <p>
+                    <label>F&oumlrfattare: </label>
+                    <input type="text" id="boktipsforfattare"/>
+                </p>
+                <p>
+                    <label>Beskrivning: </label>
+                    <textarea id="boktipsbeskrivning" rows="5" cols="65" >
+                </textarea>
+                </p>
+                <p>
+                    <input  id="skicka" type="submit" value="Skicka"/>
+                </p>
+            </form>
+            </fieldset>
+            </div>
+        </div>
+        <script src="js/form.js"></script>
 
     </div>
-<script>
-    $("#header").load("templates/header.html");
-</script>
-
-    <p id="intro"> Tipsa mig om en bok! Fyll i fomul&aumlret nedan.</p>
-<div id="boktipsformular">
-        <p id="output" align="center"></p>
-       <div class="container">
-        <form id="formReg">
-            <p>
-                <label>Bokens titel: </label>
-                <input required type="text" id="boktipstitel"/>
-            </p>
-            <p>
-                <label>F&oumlrfattare: </label>
-                <input type="text" id="boktipsforfattare"/>
-            </p>
-            <p>
-                <label>Beskrivning: </label>
-                <textarea id="boktipsbeskrivning" rows="5" cols="65" wrap="soft">
-                </textarea>
-            </p>
-
-            <p>
-                <input id="skicka" type="submit" value="Skicka"/>
-            </p>
-        </form>
-       </div>
-        <script src="js/form.js"></script>
-</div>
 </div>
 
 </body>
@@ -50,10 +56,3 @@
 
 </footer>
 </html>
-
-
-<script>
-    function myFunction() {
-        alert("Not yet available.");
-    }
-</script>

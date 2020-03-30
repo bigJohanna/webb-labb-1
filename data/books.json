@@ -4,29 +4,30 @@
 "Title": "Slumpvandring",
 "Author": "Majgull Axelsson",
 "Bookcover": "img/download.jpeg",
-  "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
-  "Link": "book-pages/slumpvandring.html"
+  "ShortText": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+  "Link": "slumpvandring.html"
 },
 {
 "Title": "Vi for upp med mor",
 "Author": "Karin Smirnoff",
 "Bookcover": "img/viforuppmedmor.jpg",
-  "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
-  "Link": "book-pages/viforuppmedmor.html"
+  "ShortText": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+  "Link": "viforuppmedmor.html",
+  "LongText": " ”Jag for ner till bror” lyckades skapa ett litet tumult i den svenska litteraturvärlden n&aumlr den Augustnominerades f&oumlrra &aringret. Att debutanter nomineras &aumlr f&oumlrvisso inte helt ovanligt, men d&aring brukar det vara s&aringdana som redan har l&aringtit tala om sig. G&aumlrna generationsf&oumlrfattare p&aring stora k&aumlnda f&oumlrlag; debuter som f&oumlreg&aringtts av goda recensioner och flitig medieexponering. \n\nS&aring n&aumlr Smirnoff, ok&aumlnd femtioplussare på ett halvok&aumlnt f&oumlrlag som &aumlnnu inte etablerat n&aringgon tung litter&aumlr profil nominerades till priset f&oumlr en debut, d&aumlrtill med aningen publikfriande titel, knorrades det en del i det litter&aumlra etablissemanget. P&aring flera h&aringll dr&aumlmdes det till med det mest f&oumlrklenande epitet detta kan komma p&aring: ”genrelitteratur”. Det antyddes att hennes bok var n&aringgot slags feelgoodroman. \n\nEn sak stod mycket klar: de som sa s&aring hade uppenbart inte l&aumlst Karin Smirnoff. Hennes m&oumlrka norrl&aumlndska familjehistoria, pr&aumlglad av v&aringld, fylla, sex, socialrealism, d&oumld och incest &aumlr v&aumll ungef&aumlr s&aring l&aringngt ifr&aringn en feelgoodroman man kan komma. "
 },
   {
     "Title": "Two Caravans",
     "Author": "Marina Lewycka",
     "Bookcover": "img/twocaravans.jpeg",
-    "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
-    "Link": "book-pages/twocaravans.html"
+    "ShortText": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+    "Link": "twocaravans.html"
   },
   {
     "Title": "K&aumlrlekens Antarktis",
     "Author": "Sara Stridsberg",
     "Bookcover": "img/karlekensantarktis.jpeg",
-    "Text": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
-    "Link": "book-pages/karlekensantarktis.html"
+    "ShortText": "H&aumlr kan det st&aring ett eget intro om bokens handling och ett citat fr&aringn recensionen till exempel.",
+    "Link": "karlekensantarktis.html"
   }
 ]
 }
